@@ -1,0 +1,138 @@
+#page-orphanage{
+    display: flex;
+    min-height: 100vh;
+}
+
+#logo{
+    width: 2.6rem;
+}
+
+main{
+    flex: 1;
+}
+
+.orphanage-details{
+    width: 35rem;
+    margin: 3.2rem auto;
+    background: white;
+    border: 1px solid #d3e2e5;
+    
+    border-radius: 1rem;
+    
+    overflow: hidden;
+}
+
+.orphanage-details > img{
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1.6rem;
+    margin: 8px 20px 0;
+}
+
+.images button{
+    border: 0;
+    background: none;
+
+    height: 4.4rem;
+    cursor: pointer;
+    border-radius: 1rem;
+
+    overflow: hidden;
+
+    opacity: 0.6;
+
+    transition: opacity 0.2s;
+
+}
+
+.images button:hover,
+.images button.active{
+    opacity: 1;
+}
+
+.images button img{
+    width: 100%;
+    height: 4.4rem;
+    object-fit: cover;
+}
+
+.orphanages-details-content{
+    padding: 4rem;
+}
+
+.orphanages-details-content h1{
+    color: #4d6f80;
+    font-size: 2.2rem;
+    line-height: 1.5;
+    margin-bottom: .8rem;
+}
+
+.orphanages-details-content p{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #5c8599;
+    margin-top: 1.2rem;
+}
+
+.orphanages-details-content hr{
+    width: 100%;
+    height: 1px;
+
+    border: none;
+
+    background: #d3e2e6;
+
+    margin: 3.2rem 0;
+}
+
+.orphanages-details-content h2{
+    font-size: 1.2rem;
+    line-height: 1rem;
+    color: #4d6f80;
+}
+
+.open-details{
+    margin-top: 1.2rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+}
+
+.open-details div{
+    padding: 2.2rem 1.2rem;
+}
+
+.open-details img{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.open-details .hour{
+    background: linear-gradient(149.97deg, #e6f7fb 8.13%, #ffffff 92.67%);
+    border: 1px solid #b3dae2;
+    border-radius: 20px;
+    color:#5c8599;
+}
+
+.open-details .open-on-weekends{
+    border-radius: 20px;
+}
+
+.open-on-weekends.open{
+    background: linear-gradient(154.16deg, #edfff6 7.85%, #ffffff 91.03%);
+    border: 1px solid #a1e9c5;
+    color: #37c77f;
+}
+
+.open-on-weekends.closed{
+    background: linear-gradient(154.16deg, #fcf0f4 7.85%, #ffffff 91.03%);
+    border: 1px solid #ffbcd4;
+    color: #ff999d;
+}
